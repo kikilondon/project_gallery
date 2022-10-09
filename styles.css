@@ -1,11 +1,149 @@
+
+
 body{
-    background-color: burlywood;
+    background-color: #49496c;
+
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;;
+
+
+}
+
+.cards--container{
+    display: flex;
+    flex-direction: row;
+   margin: 0 auto;
+    gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
 
 .card{
-    width: 245px;
-    border: 1px solid rgb(238, 14, 14);
-    border-radius: 5px;
-    margin: 10px 5px;
-    padding: 4px;
+    background-color:rgb(188, 188, 242);
+   /* width:370px ;*/
+    height: 450px;
+    margin: 10px;
+    border-radius: 15px;
+    justify-content:center;
+    flex: 1;
+    flex-basis: 370px;
+  
 }
+
+/*@media screen (max-width: 500px) {
+    .card{
+        background-color:
+    }
+
+}*/
+.card:hover{
+    background-color:rgb(233, 233, 245);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+/*@media  (min-width: 600px){
+    .cards--container{
+        flex-direction: row;
+    }
+}*/
+
+
+.card--image1 {
+    width: 100%;
+    background-size: cover ;
+    background-position: center;
+    background-image: url(images/logo\ kiki.png);
+
+ height: 320px;
+ border-radius: 15px 15px 0 0;
+ /*aspect-ratio: 1/1;*/
+}
+
+
+.card--image2 {
+    width: 100%;
+    background-position: center;
+    background-size:cover ;
+   
+    background-image: url(https://cdn3.pitchfork.com/longform/728/Wes-Anderson.jpg);
+ height: 320px;
+ border-radius: 15px 15px 0 0;
+}
+
+.card--image3 {
+   background-image: url(https://edisonday.co.uk/media/catalog/category/Project-Gallery.jpg);
+   width: 100%;
+   background-position: center;
+   background-size:cover ;
+   height: 320px;
+   border-radius: 15px 15px 0 0;}
+  
+ 
+   .card--image4 {
+    background-image: url(https://s3.amazonaws.com/usefulangle/posts/336-5f8d7837efbd4.png);
+    width: 100%;
+    background-position: center;
+    background-size:cover ;
+    height: 320px;
+    border-radius: 15px 15px 0 0;}
+   
+
+
+    .card--image5{
+        background-image: url(https://www.verdict.co.uk/wp-content/uploads/2019/02/shutterstock_1142996930.jpg);
+        width: 100%;
+        background-position: center;
+        background-size:cover ;
+        height: 320px;
+        border-radius: 15px 15px 0 0;
+    }
+
+        .card--image6{
+            background-image: url(https://independentoxford.com/wp-content/uploads/2020/06/website.jpg);
+            width: 100%;
+            background-position: center;
+            background-size:cover ;
+            height: 320px;
+            border-radius: 15px 15px 0 0;}
+
+
+            h1{
+                font-size: 64px;
+                font-family: 'Josefin Sans', sans-serif;
+                text-align: center;
+                font-weight: bold;
+                padding-top: 20px;
+                color: antiquewhite;
+               
+            }
+
+            h2{
+
+                /*font-family: 'Cardo', serif;*/
+                font-size: 28px;
+                font-family: 'Josefin Sans', sans-serif;
+                text-align: center;
+                /*padding-top: 30px;*/
+                color: #272763;
+                
+            }
+/*.card--button{
+   
+}*/
+
+
+    
+
+
+
+
+
+
+
+
+
