@@ -21,46 +21,55 @@ justify-content: center;
 align-items: center;
 }
 
+@media screen and (min-width: 600px){
+    .cards--container{
+        flex-direction: row;}
+    }
+
+
+
+
+
+
+
 .card{
-    background-color:rgb(188, 188, 242);
+    background-color:rgb(220, 220, 255);
    /* width:370px ;*/
     height: 450px;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     justify-content:center;
     flex: 1;
     flex-basis: 370px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   
 }
 
-/*@media screen (max-width: 500px) {
-    .card{
-        background-color:
-    }
 
-}*/
+
+
 .card:hover{
-    background-color:rgb(233, 233, 245);
+   /* background-color:rgb(233, 233, 245);*/
     cursor: pointer;
     transform: scale(1.03);
     transition: all 1s ease;
 }
 
-/*@media  (min-width: 600px){
+@media screen and (min-width: 600px){
     .cards--container{
         flex-direction: row;
     }
-}*/
+}
 
 
 .card--image1 {
     width: 100%;
     background-size: cover ;
     background-position: center;
-    background-image: url(images/logo\ kiki.png);
+    background-image: url(images/logo\ kiki2.png);
 
  height: 320px;
- border-radius: 15px 15px 0 0;
+ border-radius: 10px 10px 0 0;
  /*aspect-ratio: 1/1;*/
 }
 
@@ -72,16 +81,16 @@ align-items: center;
    
     background-image: url(https://cdn3.pitchfork.com/longform/728/Wes-Anderson.jpg);
  height: 320px;
- border-radius: 15px 15px 0 0;
+ border-radius: 10px 10px 0 0;
 }
 
 .card--image3 {
-   background-image: url(https://edisonday.co.uk/media/catalog/category/Project-Gallery.jpg);
+   background-image: url(images/Project-gallery.png);
    width: 100%;
    background-position: center;
    background-size:cover ;
    height: 320px;
-   border-radius: 15px 15px 0 0;}
+   border-radius: 10px 10px 0 0;}
   
  
    .card--image4 {
@@ -90,7 +99,7 @@ align-items: center;
     background-position: center;
     background-size:cover ;
     height: 320px;
-    border-radius: 15px 15px 0 0;}
+    border-radius: 10px 10px 0 0;}
    
 
 
@@ -100,7 +109,7 @@ align-items: center;
         background-position: center;
         background-size:cover ;
         height: 320px;
-        border-radius: 15px 15px 0 0;
+        border-radius: 10px 10px 0 0;
     }
 
         .card--image6{
@@ -109,7 +118,7 @@ align-items: center;
             background-position: center;
             background-size:cover ;
             height: 320px;
-            border-radius: 15px 15px 0 0;}
+            border-radius: 10px 10px 0 0;}
 
 
             h1{
@@ -122,6 +131,14 @@ align-items: center;
                
             }
 
+            @media screen and (max-width: 600px){
+                h1 { 
+                   font-size:40px; 
+                   padding-top: 10px;
+                   line-height: 50px;
+                }
+            }
+
             h2{
 
                 /*font-family: 'Cardo', serif;*/
@@ -132,14 +149,68 @@ align-items: center;
                 color: #272763;
                 
             }
-/*.card--button{
+.accordion--button{
+display: block;
+width: 100%;
+padding: 15px;
+border: none;
+outline: none;
+cursor: pointer;
+background-color:rgb(220, 220, 255);
+color: #272763;
+text-align: left;
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+font-size: 18px;
+transition: background 0.2s;
+
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+
+}
+
+
+.accordion--button::after{
+content: '\25BE';
+float: right;
+transform: scale(1.5);
+
+}
+
+
+/*.accordion--button--active { rgb (188, 188, 242);}*/
+.accordion--button--active::after { content: '\25b4';}
+
+.accordion--content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    background-color:rgb(220, 220, 255);
+
+    padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #272763;
+   line-height: normal;
    
-}*/
+    border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 
+}
+#footer{
 
-    
-
-
+text-align: center;
+color: antiquewhite;
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+padding-top: 60px;
+}
+.hyperlinks{
+    text-decoration: none;
+    color: darkred;
+   
+}
 
 
 
